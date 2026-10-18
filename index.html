@@ -1,0 +1,759 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0F2A4A">
+<style>:root{color-scheme:light}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>M.Boubs Électroniques Solution</title>
+<link rel="icon" type="image/png" href="data:image/png;base64,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QEJCArDWeq7TqFeff/5nExMTu3btRJn+wT+/MT8+DVRvaxHbtm/p7u7WShujunr6jAWjgsnJqSvXFhYLEXA30eR95M5twz0t8/Pzg+vXH73r7kQqFUZRTOnIWqONUpG2RAg8jjwJjDHWxL4kWUtABIj8k5/5N5yR4IIxjgxv+YDWMGAMmeDIOUPGiCECEkJc8NLauI6zZXRLww9OnTqTctldR/aLRHJyLt8oh7ML87VKsbm5KZnKlIvFwtry2XOXzl1ZrAQucDE81P7ofQdSQs/Pze/au+fo3fdKxzXacM4QEAExFpzJABBDxpAzRIi9XiRkyBiL/4OA+P2fvCQFc2PQGveAtVpraxhDkAK5EIwzALy1X8flTQZgDCFIzz1/5uyLL7wADG7bf6DSoBd++c701XEwkevZwf4WxuX0QtUPGCDPtDUf3D28vie3trKYSCaPHLt709atSumYSAPQLanAktFaRZExBpHHmqixFBljraEPffM4dOOffOJzkkkheewCxl0QB0/ILOOcMxG/FYyTXwBgdMs1BaYivW5gYGRkZHF+/tSpU46Ewwd39fT3L1Wialnli/5aSWnynExy546RO/YMudhYXl4cGtnwyMc/0d8/EAYhB0BE+rB3Y7f9Q0EbGQP+oSZqAeO6BgIgsFib40987kkh4lWHM0SMgbM1MV5leMunjQk4xLXBW9EfAQJjGEVRU1N2165djOHpM2eXlhYHeluPHdrLEsnFckhcDA2233Xntq6ck19ZZFw8+NBDx+6+x3MTURRxxpAz+NDCj4UEuOVmQ8zcGePAEABsbP0jsrgySQCI/x8270Jekj3ixgAAAABJRU5ErkJggg==">
+<meta name="description" content="Atelier de maintenance et de réparation électronique à Yaoundé : ordinateurs, cartes mères, consoles, TV, onduleurs et équipements professionnels. Devis gratuit et sans engagement.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="M.Boubs Électroniques Solution">
+<meta property="og:title" content="M.Boubs Électroniques Solution, réparation électronique à Yaoundé">
+<meta property="og:description" content="Diagnostic précis, réparation soignée et suivi clair. Devis gratuit et sans engagement. WhatsApp : +237 6 56 39 58 12.">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: atelier éditorial. Hero en deux colonnes (titre + oscilloscope vivant), puis bento de services, outil de diagnostic, process en bande verte "solder mask", FAQ, contact. */
+:root{
+  --bg:#ECEFF3; --surface:#F7F9FB; --ink:#0E1A2B; --muted:#4A5668; --line:#CBD3DE;
+  --mask:#0F2A4A; --mask-ink:#E6EEF8; --mask-line:#27507F;
+  --accent:#1F5FB4; --on-accent:#FFFFFF; --accent-text:#1A4F95; --gold:#E9C27C;
+  --screen:#06121F; --grid:#123352; --trace:#2FE0C8; --warn:#E3A83A;
+  --err:#B3261E;
+  --wa:#25D366; --on-wa:#04210F;
+  --display:'Bricolage Grotesque','Arial Narrow',Arial,sans-serif;
+  --body:'Instrument Sans',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,Menlo,Consolas,monospace;
+  --radius:14px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0A1220; --surface:#111C2E; --ink:#E6ECF5; --muted:#93A3BA; --line:#223250;
+    --mask:#12335C; --mask-ink:#E6EEF8; --mask-line:#2F5E96;
+    --accent:#6FA8FF; --on-accent:#06162B; --accent-text:#8DBBFF; --gold:#E9C27C;
+    --screen:#050E1A; --grid:#12304F; --trace:#2FE0C8; --warn:#E9B24A;
+    --err:#FF8F86;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0A1220; --surface:#111C2E; --ink:#E6ECF5; --muted:#93A3BA; --line:#223250;
+  --mask:#12335C; --mask-ink:#E6EEF8; --mask-line:#2F5E96;
+  --accent:#6FA8FF; --on-accent:#06162B; --accent-text:#8DBBFF; --gold:#E9C27C;
+  --screen:#050E1A; --grid:#12304F; --trace:#2FE0C8; --warn:#E9B24A;
+  --err:#FF8F86;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--bg)}
+h1,h2,h3{font-family:var(--display);line-height:1.02;margin:0;text-wrap:balance;letter-spacing:-.02em}
+p{margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.eyebrow{font-family:var(--mono);font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-text)}
+section{scroll-margin-top:84px}
+
+/* Icônes d'appareils */
+.ico{display:block;flex:none}
+.devgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.dev{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;padding:14px 8px;font:500 .86rem/1.2 var(--body);text-align:center;color:var(--ink);background:transparent;border:1.5px solid var(--line);border-radius:12px;cursor:pointer;transition:background .2s,border-color .2s,color .2s;min-width:0}
+.dev .ico{width:38px;height:38px;color:var(--accent-text);transition:color .2s}
+.dev:hover{border-color:var(--ink)}
+.dev[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.dev[aria-pressed="true"] .ico{color:var(--bg)}
+.res-top{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.res-ico{width:52px;height:52px;color:var(--gold)}
+
+/* Formulaire */
+.err{font-size:.85rem;color:var(--err)}
+.err:empty{display:none}
+input[aria-invalid="true"]{border-color:var(--err)}
+.req{font-size:.82rem;color:var(--muted)}
+
+/* Galerie en atelier */
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:20px 14px}
+.shot{margin:0;display:flex;flex-direction:column;gap:12px;min-width:0}
+.frame{position:relative;aspect-ratio:400/260;max-width:100%;background:var(--mask);border-radius:var(--radius);overflow:hidden;box-shadow:inset 0 0 0 1px var(--mask-line)}
+.frame svg,.frame img{position:absolute;inset:0;width:100%;height:100%;display:block}
+.frame img{object-fit:cover}
+.shot figcaption{display:grid;gap:2px;font-size:.95rem;line-height:1.45;color:var(--muted)}
+.shot figcaption b{font:800 1.12rem var(--display);color:var(--ink);letter-spacing:-.01em}
+.ill *{fill:none;stroke:#8FB0D6;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.ill .hl{stroke:var(--gold)}
+.ill .tr{stroke:var(--trace)}
+.ill .dim{opacity:.45}
+.ill text{fill:var(--trace);stroke:none;font:600 22px var(--mono)}
+@media (max-width:900px){.gallery{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.gallery{grid-template-columns:1fr}}
+
+/* Avis clients */
+.notice{font-size:.9rem;color:var(--muted);border:1px dashed var(--line);border-radius:10px;padding:12px 16px}
+.reviews{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.review{margin:0;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:26px;display:flex;flex-direction:column;gap:16px;min-width:0}
+.rtop{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.rtop .ico{width:34px;height:34px;color:var(--accent-text)}
+.what{font:600 .74rem var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--accent-text)}
+.sample{margin-left:auto;font:600 .66rem var(--mono);letter-spacing:.08em;text-transform:uppercase;border:1.5px dashed var(--muted);color:var(--muted);padding:4px 10px;border-radius:999px}
+.review blockquote{margin:0;font-size:1.02rem;line-height:1.6}
+.review figcaption{margin-top:auto;font:400 .82rem var(--mono);color:var(--muted)}
+
+/* Réassurance */
+.assure{display:inline-flex;align-items:center;gap:10px;justify-self:start;font:600 .92rem/1.3 var(--body);padding:9px 18px 9px 12px;border-radius:999px;color:var(--ink);background:color-mix(in srgb,var(--accent) 16%,transparent);border:1.5px solid var(--accent)}
+.assure svg{width:20px;height:20px;flex:none}
+.assure svg *{fill:none;stroke:var(--accent-text);stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.assure.inv{color:var(--mask-ink);background:#ffffff1c;border-color:var(--gold)}
+.assure.inv svg *{stroke:var(--gold)}
+.res-cta{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+
+/* Bouton WhatsApp flottant */
+.wa{position:fixed;z-index:55;right:calc(16px + env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));display:inline-flex;align-items:center;gap:10px;padding:14px 20px 14px 16px;border-radius:999px;background:var(--wa);color:var(--on-wa);font:700 .95rem var(--body);text-decoration:none;box-shadow:0 12px 30px -8px rgba(0,0,0,.45);transition:transform .2s ease,box-shadow .2s ease}
+.wa:hover{transform:translateY(-3px);box-shadow:0 16px 34px -8px rgba(0,0,0,.5)}
+.wa svg{width:24px;height:24px;flex:none}
+.wa::after{content:"";position:absolute;inset:0;border-radius:inherit;border:2px solid var(--wa);animation:ping 2.6s ease-out infinite;pointer-events:none}
+@keyframes ping{0%{transform:scale(1);opacity:.7}70%,100%{transform:scale(1.25);opacity:0}}
+
+/* Header */
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:color-mix(in srgb,var(--bg) 84%,transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:64px}
+.logo{display:flex;align-items:center;gap:10px;font-family:var(--display);font-weight:800;font-size:1.25rem;text-decoration:none;letter-spacing:-.02em}
+.avatar{width:48px;height:48px;border-radius:13px;object-fit:cover;flex:none;background:var(--mask);box-shadow:0 0 0 1.5px var(--line)}
+.avatar.sm{width:36px;height:36px;border-radius:10px}
+.brand-foot{display:inline-flex;align-items:center;gap:12px}
+.logo span{display:flex;flex-direction:column;line-height:1.05}
+.logo small{font:500 .58rem var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-top:3px}
+nav.links{display:flex;gap:4px}
+nav.links a{font-size:.92rem;font-weight:500;text-decoration:none;padding:8px 12px;border-radius:999px;color:var(--muted);transition:background .2s,color .2s}
+nav.links a:hover{color:var(--ink);background:color-mix(in srgb,var(--ink) 8%,transparent)}
+nav.links a.on{color:var(--ink);background:color-mix(in srgb,var(--accent) 24%,transparent)}
+.bar{position:absolute;left:0;bottom:-1px;height:3px;width:100%;background:var(--accent);transform:scaleX(0);transform-origin:left;will-change:transform}
+.btn{display:inline-flex;align-items:center;gap:10px;font:600 .95rem var(--body);text-decoration:none;border:0;cursor:pointer;padding:13px 22px;border-radius:999px;background:var(--accent);color:var(--on-accent);transition:transform .2s ease,box-shadow .2s ease}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px -10px var(--accent)}
+.btn:active{transform:translateY(0)}
+.btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+.btn.ghost:hover{box-shadow:none;background:var(--ink);color:var(--bg)}
+.menu-btn{display:none;font:600 .9rem var(--body);background:transparent;color:var(--ink);border:1.5px solid var(--line);border-radius:999px;padding:8px 16px;cursor:pointer}
+.mobile{display:none;border-top:1px solid var(--line);background:var(--bg)}
+.mobile a{display:block;padding:14px 0;border-bottom:1px solid var(--line);text-decoration:none;font-weight:500}
+.mobile a:last-child{border-bottom:0}
+
+/* Hero */
+.hero{padding-block:clamp(36px,7vw,84px) clamp(32px,5vw,56px)}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(28px,5vw,64px);align-items:center}
+.hero h1{font-weight:800;font-size:clamp(2.6rem,6.4vw,5.4rem);margin:18px 0 22px}
+.hero h1 em{font-style:normal;color:var(--accent-text);position:relative;white-space:nowrap}
+.hero h1 em::after{content:"";position:absolute;left:0;right:0;bottom:.04em;height:.09em;background:var(--accent);border-radius:4px;transform-origin:left;animation:draw 1s .4s cubic-bezier(.2,.8,.2,1) both}
+@keyframes draw{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.hero p.lead{font-size:1.14rem;color:var(--muted);max-width:52ch}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.facts{display:flex;flex-wrap:wrap;gap:12px 32px;margin-top:38px;padding-top:22px;border-top:1px solid var(--line)}
+.facts div{font-family:var(--mono);font-size:.78rem;color:var(--muted);line-height:1.4}
+.facts b{display:block;font:800 1.7rem var(--display);color:var(--ink);letter-spacing:-.02em}
+
+.scope{background:var(--screen);color:var(--mask-ink);border-radius:20px;padding:16px;box-shadow:0 30px 60px -30px rgba(0,0,0,.55),inset 0 0 0 1px var(--grid);min-width:0}
+.scope-head{display:flex;justify-content:space-between;align-items:center;gap:10px;font-family:var(--mono);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:#8FA9C7;padding:2px 4px 12px}
+.led{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--trace);margin-right:8px;box-shadow:0 0 10px var(--trace)}
+.led.bad{background:var(--warn);box-shadow:0 0 10px var(--warn)}
+#scope{display:block;width:100%;height:240px;border-radius:10px;background:var(--screen)}
+.readouts{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px}
+.readouts div{font-family:var(--mono);font-size:.68rem;color:#8FA9C7;text-transform:uppercase;letter-spacing:.06em;background:#0000003a;border-radius:8px;padding:8px 10px;min-width:0}
+.readouts b{display:block;font:600 1.02rem var(--mono);color:var(--mask-ink);text-transform:none;letter-spacing:0;font-variant-numeric:tabular-nums}
+.ctrl{display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center;margin-top:14px}
+.seg{display:inline-flex;background:#0000004a;border-radius:999px;padding:3px}
+.seg button{font:600 .8rem var(--body);color:#A9BED6;background:transparent;border:0;border-radius:999px;padding:8px 14px;cursor:pointer;transition:background .2s,color .2s}
+.seg button[aria-pressed="true"]{background:var(--trace);color:#04202F}
+.seg button.bad[aria-pressed="true"]{background:var(--warn);color:#2A1D00}
+.ctrl label{font-family:var(--mono);font-size:.72rem;color:#8FA9C7;display:flex;align-items:center;gap:10px;flex:1;min-width:160px}
+.ctrl input[type=range]{flex:1;min-width:0;accent-color:var(--trace)}
+
+/* Marquee */
+.marquee{overflow:hidden;border-block:1px solid var(--line);padding:16px 0;background:var(--surface)}
+.track{display:flex;gap:48px;width:max-content;animation:slide 38s linear infinite;font-family:var(--display);font-weight:800;font-size:1.55rem;letter-spacing:-.01em;white-space:nowrap}
+.track span{display:inline-flex;align-items:center;gap:48px}
+.track span::after{content:"";width:9px;height:9px;border-radius:50%;background:var(--accent)}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* Blocs */
+.block{padding-block:clamp(56px,9vw,112px)}
+.head{display:grid;gap:14px;max-width:720px;margin-bottom:clamp(28px,4vw,48px)}
+.head h2{font-weight:800;font-size:clamp(2rem,4.6vw,3.4rem)}
+.head p{color:var(--muted);max-width:60ch}
+
+.bento{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:26px;display:flex;flex-direction:column;gap:12px;min-width:0;transition:transform .3s cubic-bezier(.2,.8,.2,1),border-color .3s}
+.card:hover{transform:translateY(-4px);border-color:var(--accent)}
+.card h3{font-weight:800;font-size:1.45rem}
+.card p{color:var(--muted);font-size:.97rem}
+.card .tag{font-family:var(--mono);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-text)}
+.card.big{grid-column:span 3;grid-row:span 2;background:var(--mask);color:var(--mask-ink);border-color:var(--mask-line)}
+.card.big p{color:#B9CCE3}
+.card.big .tag{color:var(--gold)}
+.card.big:hover{border-color:var(--gold)}
+.card.s3{grid-column:span 3}
+.card.s2{grid-column:span 2}
+.tvx{margin-top:auto;width:100%;height:auto;max-height:210px}
+.tvx *{fill:none;stroke:#8FB0D6;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.tvx .ghost{stroke-dasharray:5 6;opacity:.55}
+.tvx .flow{stroke:var(--trace);stroke-dasharray:6 7;animation:flow 2.4s linear infinite}
+@keyframes flow{to{stroke-dashoffset:-26}}
+
+/* Diagnostic */
+.diag{display:grid;grid-template-columns:1fr 1.05fr;gap:14px}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:clamp(20px,3vw,32px);min-width:0}
+.panel h3{font-weight:800;font-size:1.3rem;margin-bottom:18px}
+.group{margin-bottom:22px}
+.group>span,.group>label{display:block;font-family:var(--mono);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font:500 .92rem var(--body);cursor:pointer;color:var(--ink);background:transparent;border:1.5px solid var(--line);border-radius:999px;padding:9px 16px;transition:all .2s}
+.chip:hover{border-color:var(--ink)}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.result{background:var(--mask);color:var(--mask-ink);border-color:var(--mask-line);display:flex;flex-direction:column;gap:18px}
+.result .eyebrow{color:var(--gold)}
+.result h3{margin:0;font-size:1.7rem}
+.result dl{margin:0;display:grid;gap:14px}
+.result dt{font-family:var(--mono);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:#8FB8E0}
+.result dd{margin:2px 0 0;font-size:.98rem;color:#E3ECF7}
+.level{display:flex;gap:6px;align-items:center}
+.level i{width:42px;height:8px;border-radius:4px;background:#ffffff26}
+.level i.on{background:var(--warn)}
+.level span{font-family:var(--mono);font-size:.8rem;margin-left:8px}
+.note{font-size:.82rem;color:#9DB8D6;margin-top:auto}
+
+/* Process */
+.mask{background:var(--mask);color:var(--mask-ink)}
+.mask .head p{color:#B9CCE3}
+.mask .eyebrow{color:var(--gold)}
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,1fr);gap:0;border-top:2px solid var(--mask-line)}
+.steps li{padding:22px 18px 8px 0;position:relative;min-width:0}
+.steps li::before{content:"";position:absolute;top:-8px;left:0;width:14px;height:14px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 5px var(--mask)}
+.steps time{font-family:var(--mono);font-size:.74rem;letter-spacing:.08em;color:var(--gold);display:block;margin-bottom:8px;padding-top:6px}
+.steps h3{font-size:1.2rem;font-weight:800;margin-bottom:8px}
+.steps p{font-size:.92rem;color:#B9CCE3}
+
+/* FAQ */
+.faq{display:grid;gap:0;max-width:820px}
+details{border-bottom:1px solid var(--line)}
+details:first-child{border-top:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;padding:22px 0;font:800 1.2rem var(--display);display:flex;justify-content:space-between;align-items:center;gap:20px;letter-spacing:-.01em}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font:400 1.8rem var(--mono);color:var(--accent-text);transition:transform .3s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{padding:0 0 22px;color:var(--muted);max-width:64ch}
+
+/* Contact */
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+form{display:grid;gap:16px}
+.field{display:grid;gap:6px}
+.field label{font-family:var(--mono);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+input[type=text],input[type=tel],select,textarea{font:400 1rem var(--body);color:var(--ink);background:var(--bg);border:1.5px solid var(--line);border-radius:10px;padding:12px 14px;width:100%;min-width:0}
+textarea{min-height:110px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 30%,transparent)}
+.recap{display:flex;flex-direction:column;gap:14px;min-width:0}
+.recap pre{margin:0;flex:1;font:400 .88rem/1.6 var(--mono);white-space:pre-wrap;overflow-wrap:anywhere;background:var(--bg);border:1px dashed var(--line);border-radius:10px;padding:16px;color:var(--ink);min-height:180px}
+.coords{font-family:var(--mono);font-size:.85rem;color:var(--muted);display:grid;gap:4px}
+.coords span{user-select:all}
+.coords a{text-underline-offset:3px}
+.status{font-size:.9rem;color:var(--accent-text);min-height:1.4em}
+
+footer{border-top:1px solid var(--line);padding-block:34px 96px}
+footer a{text-underline-offset:3px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-family:var(--mono);font-size:.78rem;color:var(--muted)}
+
+@media (max-width:900px){
+  .hero .wrap,.diag,.contact,.reviews{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr 1fr;row-gap:20px}
+  .card.big,.card.s3{grid-column:span 6;grid-row:auto}
+  .card.s2{grid-column:span 3}
+}
+@media (max-width:1080px){
+  nav.links,.top .btn{display:none}
+  .menu-btn{display:inline-block}
+  .mobile.open{display:block}
+}
+@media (max-width:560px){
+  body{font-size:16px}
+  .card.s2{grid-column:span 6}
+  .steps{grid-template-columns:1fr}
+  .readouts b{font-size:.9rem}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+<defs>
+<symbol id="i-laptop" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="10" width="30" height="22" rx="2.5"/><path d="M4 38h40l-3-6H7z"/><path d="M21 35h6"/></g></symbol>
+<symbol id="i-console" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 15h18a9 9 0 0 1 8.7 6.7l2.2 8.6a4.6 4.6 0 0 1-7.9 4.3L32.5 32h-17l-3.5 2.6a4.6 4.6 0 0 1-7.9-4.3l2.2-8.6A9 9 0 0 1 15 15z"/><path d="M16 20v7M12.5 23.5h7"/><circle cx="32" cy="22" r="1.6"/><circle cx="36" cy="26" r="1.6"/></g></symbol>
+<symbol id="i-tv" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="9" width="38" height="26" rx="3"/><path d="M16 41h16M24 35v6"/></g></symbol>
+<symbol id="i-ups" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="7" width="30" height="34" rx="4"/><path d="M26 14l-8 12h6l-2 10 9-13h-6z"/></g></symbol>
+<symbol id="i-pro" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="38" height="26" rx="3"/><circle cx="16" cy="24" r="6"/><path d="M16 24l3.5-3.5"/><path d="M27 19h11M27 24h11M27 29h7"/></g></symbol>
+<symbol id="i-other" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="14" y="14" width="20" height="20" rx="3"/><path d="M19 8v6M24 8v6M29 8v6M19 34v6M24 34v6M29 34v6M8 19h6M8 24h6M8 29h6M34 19h6M34 24h6M34 29h6"/><path d="M21.6 21.6a2.6 2.6 0 1 1 3.4 2.5c-.7.3-1 .8-1 1.5"/><path d="M24 29.4v.1"/></g></symbol>
+</defs>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#accueil" aria-label="M.Boubs Électroniques Solution, accueil">
+      <img class="avatar" src="data:image/webp;base64,UklGRgAfAABXRUJQVlA4IPQeAAAwbACdASqwALAAPkkejESioaEWWV5MKASEsYvNwQ8sAz26MvkvwBfI7suzPMh6U88v+39Vv6C9gb+zeDN7rf3A9Q37jerl/u/3A98Hmof3TrhPSQ6Yz917bL5Nfr/CH8f+of0H93/wv/B9gb5w8t3VnmR/K/w/+j/u37s+3H++8e/kv/n+oj+Rfz//SfmV6L/Aftj/y/UO97PsX+y/xf7z/5b03/9n0q+v/+y9wH9Yf93+cPrceNV597Av8//t//Y/x3u0/1n/r/1H5ae6H89/yP/m/0HwG/zb+zf8/++/lB88XtR/ab2h/3Va0QGC8GFz+LyW1/9KF7Gq+x+VLybf7Z65Qc696AiHhua9OrHKPz1OLnD2JwmbQKm6Gt9DtRDkolQ6TJWNn9itaD5j5APmf8MCOfjN+n7lFqL+DboRcL2/rysH/HXmo7cYnYpz/CFWlKUJdv1XT3y03Gcrl0dn/Zs2Fc2k3Iv7FhxNGIXyADyqQS3SXKZ36bviziIBmfKqCqwzNytFKe2xuEVRr/fb3xatmph2WgjpsrnHr3MF8SFurCjsBpU+tnZlQwBBPYRZIBkGcoVCVrHbzJCgw3JU7X/jfvcHgwwuzfGWOrb52oI6l5l9or/3r+EsIjNdZbPwb2l61BZfcTLtN+tZCWRfBHpBGsAm5CwqtbTT20TchnyC4bSlyuAaDfUUf2c7hjcNBzfgHh9Lt/flMUkMSUpIqs8mnIGZl3JPRqg4hyN97WYs7IlRnVcYJlRWfJ2R7CPEe///gp1c7Oug4S1YdMrDPrZXksRICQE8GqQCLf5en8nX5KR5mWnVlRQRPBT4XNEXbpfXUE+EOXf1GrhNKx2LWeMX0QnxRLw0eQT4yajxIK2Z5rvPNdH5Q2Fl12kqu8F/bMQb243L5iydAYjz2oCxVNeir+9wN1kWVrKItL1pKGrJ1Q7hNEnPUUADD2ii//jkl0py8O3D5L6bfIcO/GeGCt+9WYD4dJ/+u8b8dANthNAjvq3vpNRq+cxBacfN5Y/uq1vGTOcADxiB2K7jLcX7ZKbR4vRziAFdcK3Q73CUnpe3cw+trsM+4aWGaKhdJMLmFQaAh2x3PsREmdksK5DYdXbiWhztivMcvhwFzuCGdqvthDV2L+IGCwm6sKn7wG9OkKtOwTZvF20AAP77PFay3jOaTazpyfl74IQBJnkdcMDvG8yTp0OI2jZGo6cP9bolGxMha+mhj6lIdx2yH+Ly9YlBFrWsqysl2E03JFegVEIPgBCplYQgVyGw53apQIvEHK/88/W86xiBhcUcmkE/8y9BGwwPwKU0Y76NXgho8l+tZ0/3Ova3D3GwHxbuTWhZp09u2vmdNOvpeCqwnn+uT935rKRS7KIoPofvwanPdLLHOgx9czugnqyNUd8++QWUspv7UXntpwME7AN7ljqx4uzMzGH6Gv4Cht2of2VIOAGcf/sC8y9kRc7fXQHkU7KL8YCRYOHIMGxnioeMECXPOZKdJW6OR/L/ykU6CdZvroZcCZNBfSgBxJUwRYjmi34teecrRKamWO74di8ZTSfeL5+K7zKYdATfand9yD6h1HKD+Np+TkqT2hKYje/oKV/ldqY83Z0PZRynVlIvo3l4YmWrAnCHrMqQ38MCdPKAZ2gzHR3LlIziZV2bjCSFnGpu1OWvxbjtRAc4UFEOxl2l9WMiBGL2fKeF6YpLoBIhB4wcsXatJo6C/davjcCBbZhIPO8ev+IrYYC8HeJCmB5KOgxuvNSMU57Bpqu8lkY9DuklFtd0NbWQhxVNsDHyaGXiZkT2bTHW2C1U8FCZEyVwgFSPIsGYJv1SXlk/ZuUbKz5fjehP5M/lyQbPfzTOHsVQt6LzjxsClqDr06nfytS8vKi4nWxMtV6roL0v6eqVgyF1xz5KNTo4/bB/I85Jkwj8iKpISU1DA1LxqoIKzr9/8MuX6yf08FY3y2XCQ5LVNT45ajEt4GkrtYm1IM+L7J6oPgbTJ+Z85NVIzJ94yMcd285YlmlNoWVJkmt+66rlprrVOh/afoT5nwZvTlB1fCijDbJpkkGvF4AhSCb3fwung1RISxjf+mKEdja94h+xbWX/QEeoa4poYeXzdpzO4365Ow+8IjbBEoWesmZep32K5fdZZuL9uO7UqfcVJohRE52nQAG0sjRnVb5cXZUmdTvC+xAD0M0R/cP6BPJO7UFQEm6IaHm/CDBTSVwhBaFRPsOnIjyYVomtlrLDPeNRI+c6nDhiers7BIXpzT1nFtt0Iekk4ynpFPJXIRsq7nSDLrK/2Tg9C3H02mCqP3yvd1Did1x6gavFhBPjXgne14hAeo5Y6xMFj+FH24Q9h4eyZxgfU/2SGdbcQGBlL4Pgl70oOe3SGaSvc0zuKvcyAtaw9DglNQ0fG/h+hTdZn43NZtgxmAJKxopL5Pmc7zuyufIolG9ZwxbJdqQv60yf9eas3CJWXBqdJZnpVYObZjciDHfeKCbesK8gBUBV4ET8J569Ya77QhNOhKldx/DSBfGn5ax8hujv8r7/OBIuS0zmmMWvuMqG0/51iGul4ycl++Udw04tTaF2F2xVAQ/J2pzsGzRa/0nXcH+sAauaaXkBK7asbCkZbcdlZdldf32/DnIVVLKzTvsv1Rr+3T+u+xaZQmQRO9wjhdSP1ToRYv759UG7t/VJc9TRRC6Bsr+WHWnUDkgk+9oM8VVw1GmuZlYM286JZ8Yo4mwg3fg7fBFhEBppm+WkLhAI0rDA7oH2/bH6RNsyJlIiSihw6Lj/tSCsebX0oYj13vL25BX9gHy4Ho6pLlWVpNLMnK+B+fM2XQVSyDNxpzwhusitr8XlDgzv9Bu7yWkcvebETuyMw+QhovoIndAJrCdYuMSTIo0FPpBInrupe9k+H/7NoQlseVWDtSNBVVHpCBQxpIaqlZ/XYWv2QY3/nn7ri1uhbW7N/7xuml0XLrQBGxvxevQ8uI+XD0zFoYH9bGtdDdsjGRsxfjt4n9SNrN9295i6p8G56KjdsPnnWHBRHHG67rJZKFbbfIHPUvim81FbhXAKMURrgTMRCtHA8zFOoAOJZiUbsXpsHRW0XVaMNGC2uwRzknCnb+mDzSszfsFib9Mj7M15qwQjwmytr5SVLL3lZg0muuz/dQPqovHmFhkAoaI8cDoJstYZtqZA6icAvSK/D2ZqxPc76OvLa3DQhLlyMsxHv5K1ysJYrOQZJa5PNgPwprqxLomY8hwixkT/e7ivfrJU1FEB2bN9vEejZUZbJvLpAPfkGogqmt3Ty4E12GxNflFNYsFpUpYEdar3L2c3V8hZ0WUv70J3bHiSjWU8vPWCooCLGrgWcfHPKKfETDM1rnOH7k04nlG4jwRs/3bMOU9MUaE9nSyppNtR2vII1GB6rFbljsA4ONuIXwiDJVQh2EbxSUWsY637+xRDsetzbYHNvchsI3pf37MXQ5GvU6VW2ULFpxIckihDnfe+5UyPSiERmzeJr21c3qVLTPWRqzv5XthVGFW/fKqDXNo4dPPIRIdStoeVDF8voqTVQt44zvPTyJJCvrzfY4z6LpXjvxQYJDw2e59iRcQCqoUrexTV0iJ+wsECHyWVbeNpVj5yCJiQsHjGGZg0sAsXKcYVoRza5WoMrPJXw3550FEQzk3KwUt5yfc+WR4AU/teBYcBtYTN+ejm8J2EBmNbyPekwYAlZvdFrbiSuG+KDxvOtrzYL+k6T2JZPRtmI21V1ur6Cl9WGqDSS/FlL/bGeDwjRZ1H5yF/7Ijj4jCSNKhwLKR1s35xo9g7S128S5/0D0BWaK692bVMZWED9OcLUxy2wq6ycAi6IuNtydzD2K+lGvgBcPg08+tXSVnx/QVz1uJK4KfaB1j2XqBRgjB13imEXPD4afLbs3PHVR+7xv8sZswZBRZCJR3w/mqxHHiza203o5S9l6ZpBlJftcWcALNnJTwUBO6rWZ7tvIf/j1cbHKYyo1ycZjzLhdZGWbnNCoLsItaJF+1YHr3fNUXQxBFoZBQPooA+LDvrnjnbLMsFVmwP4PODNu+v4u/6f7oAjdCOPvydpQ4kfePaM+QmGso0DTVBix07C8uFkSXyAfej2DK65EAaxSoT4kRi+1/em+otHlYD65bUclYWkgIrUK4jzM8WR/hnRfl+R0GT06z0DaPAD5MTmwl9Ihbav9Cf+C6ssOB1WG1YNwOvUhADz3gpIxe9w3meTtW6MTREuMtbCfHWk6XCty9brRmPNBl34XB6cnh0umfXeQktrHGDGPAKtp30goPjowoftZuMyrL6ovnB4RRX0ahpHzZ+Pvh35ESe62nhTwTqTtyEz3xAgpURUSmqpD3azR9oJc9WTWeKkFxYR68PQOksIKz2diBgFLH6Ge1lScIyLfQwoVZtZPVWR0JVQ+TuV3cAQQeIk0xr7K4qygVWSd+iyDCigzPL7FiCFIm8N2kbL6dURXLWuE8D92mXmmepDde04TVNdzmaTqH/FxnZ1gzA4BE7uXTzmyF88FmFJQVe2currY0F2Z3tnoBJelgeicZReyI19aXai7LpXbAEaHiuzq3qhszqo5/Gk7GKo89JyXgPMFUWy7MduD0M17i9mgRnFGMMdbRvsVBmnl/aO1VmnoEvGvze0r/vzzNBqUHYfI02a3VkFE9munYi3s/Nr3VIPqFEdxbrPY0MxHdo3h1ub3a3ieGPuiUlmWRvUW2vKESU+XUz2reU0dz6Us4EGJwsNct01EdY1BZMFMktNSAH4kyEHvAkAHYLXFTfacxFA1W1oNeG7OtqWzW4mOSNDZg04MywtO6tFflV23mhm+VS9q4AVY2oHz5M0nMkozcUDmczCSwsPzqfuc5Ywm298a7ohwZBZBceV2htF0dRpgX1YEIm642W/Oke/rywxwKRC6AhBaoccP+nF9Atf5iOJ20yaESyogKpmiGiCiR8Ch12YXhVS8ehQWdtF8zY+WEDvqKtSFqcI5M3se84WbFl2v4Wx/NGP+TVKdwq/ii8GHgOcwp6Pi51ro+NCE5x3MsFfYwrRjReCEJX+PQsRPWZurMY3lpfdeZSlo2EP+uu70JLsJzYQ6ztSaD+V4UWpoK8YVNYhWvSTR9lG2Wj+yU8t2rKHD70XIXK3bZLqzSjM7t1etd3DpFjDnRgd2038+f+nOipSGsUbtnssTINnGbsOOkVSbzMLHySrLKTdPkiAkYdrOBoiV9AJI7qpn2Az3PvB8I6dbeXAn8c0fqdTIUFyGmcrwKNIlorVjzX5DzddMha2UcVwS3eaKaWWNyYJf6bGk2gkwNnj7TnYi/pE6go/GXOqY/qoZvniWO6Cb+5QPmAJ/cDDejcMpbTVEFfhmL2K8WZ5MW0icd9XZH8Su3ajIQH7BCkasEJeN2KwYrPEajyKsz0bCT7Ru8Nr2DS86JbmxW/FDa4jbn16cMxliGH3ZRgoGOK2ckroA+oUNuxa9+68KazlCd0fJ+7YpKTWahkUJ8M9GFN+/s9dKg2+B8+F5MM8cXTgnsMHySYPQ8xR4fiS3TevevkWY40t/D9ker/T4/DxA6dejB05F+1j291oAtnl68OGYNFxxf7S3/4Otef9jzh8KH5p/Rxx6E808aZD4qBcGWOLoibvy5tfoK5hUxNUpldWKc9m5RgaJC2nPC1CtiUQEc9+tEzInIV/CKLU8KQM2OxTTDo+Ty/rHjHrrUMnPEYKVd7eKxwk/OyVm87prsTYbICxJ3k3Ehfphaa/GymEyMdnr550k85+NkEpBbPhXH3qft+41C+/W9dGST1CA1NCDjTmy4AreTmB447AsXRoj5QPuSdVb5LFPew3/Hmr0T3y99nMoyGtnfQ1zB3ECB+BCEtjtnjru1tsEs2Om7NHfDb9oilfGahSoLjkrBoSRFoKf7az3cBb4ZWqta68kip3qMpFL7yPuWRIo/4pwf8iAMFZL1sb6K57MhD2KzbhLUTReYOniUSI/f4yB5Yrd1fPVBMM6oZCLqCD95PBCtaLJHNLeh1RXMF6an+Ag3nbT1xgodZcog90JTz0eLcq4Muwe3bgheHnZvkRkWuMqxf7GeRMyOMAAQ+cA/Ehyy9oTlLQBPLk5odvdrg1dN8g7UUIcoL2Ug2rOz2TVz3bLMBX8qDg1OahY4o2SIhHC5paKiF42T2oFQO6o2uGV4nSZ72HxKWs9Xi0p67yIHgXnHkQZooBQm3OVBw18F5lJnyTaanDWk206ea9Lq9T9FrNLMKpS3OiuGU8yHus9y64wkxwsIwmr5jHkMn4X76MUPrsqLSo4ASyy9/Ypzp5CackMM7Ast9Z22tgbcweJbMJoyNtJp91nD06TsaMjxg5D0ulzX0nzmsImQTjAyOWW8Zh2Lz3ncRiqaBvCt2wE05d6yrYJfwVP3SZRBVrmTFddDFXmWrVU1KAcG9T/f5AzBRNpYhYn4934nPidDwpJHIc7YL2/CSTpC+GmoUINsUx3fDW9AZoJJ+Bjnbb1nmtXrO2h/BedgKOlj+4rNhiR1PP8lYoW5DXZw+Hu9o519i0MWXjSa0tcOQ9tgWIg/4vWNEpfnrWSnfpsEforOr8JcpUerVGyOa68b6POGxONTiKSTFPIB4LUpcz7ZALt+UnvoxEA5GGmAwzkYD8Sqfx4s4S4mbS8gV8Do5k14tyv/sIQuOjgTWNbed7E1MeJQkLRrBL/sqxLldIuRnybhoff/6FY6QyYhGMD80iLR8XWZhDe21tF7ohMcsKv0hPvGVByDr9eGF2cELZmmo7AM2szwIVC9lHOYbXqtp+QmDVFWwiHi79APUL85xRNqM14k2M3w1XwYCXhvDzYhSrnLf1JzJB8Nt87fO7vNRMW/3rDj23VrzVXmvTJ1tuj/JArEWXm5zCGj7CXmGkT9ykB9BFVgkbthHC2D5GdrfTzYZj4GqhuAEaHRfChQ11lkxDlHTbv55Jf75Vj3t35QLX/oR8XMYtW/f+p5l/Di4aYDrft88mwSC9KTF0XVMgI2hGDJyai8zbW/Jgke6ENRgWjgi8BpaioRnps+yyPawdtURuGIMVpGzKTxHU2FQB6wg5Urb9ugBqRrk5bUzvXSNytdhLfr6ndkPk3JorF8qUvPIPHu1Dh0Gt+GQJUzX5uEzDHJKy2R6FB/zVIoyKW6kQd8ycdQdXcv+5b9bx9r+m35LD46c188LQMQa+ttrQDYxpUhgyFRRUok6hQm81KdioQsbJ908DxsEmLLIiLxSySCjixjjZVDSuMbb+NqTHxv90FFnC2PTWtGP1LtlRnYK6VYdDdcelDVmmgPLQimuwIUYRIqA7/WXU5s06x/sIim7OLZkjE8lLGlHOkDOIj647WGKHR1BVhDIQJt96xf+VI0GXCHJ0GYgNM8u4xdZvqbzS0DgveZ6KAbf8Qju492JIaLLZNTa3zaTTz60fSdX+liTu8Oc5IdwIo2RCESv8nUoj//Z5lkNkqR5WxleWsQwEMQDWV87s46zz0RbUDSJ48yPNpGnwJODD6MwpNEiwO7ylI4/KCnynKSA2kjXVmeE6IQxRaOCT5IbEDoPopjPZWXdNM7f6LH1gjTk0iamE8MLyf+M0cUbWiQwqUehPJXlzxiDLSSVV1+LLBhaW3nl13EknB0buzkt5ACTOECif02R2vAq5z9hyneFCaciHWL4Kt8SLIxjr/88RoYRFdTAp3PvXPeSlTl1/hB41FR8pcUvjSVDnZbsjbCkKN1Xuza88y3RVEZU2/3ma/UypE/Iz4Jf08D5niliNpIi73RM7pV4jRKrFkpjbRRRTEcSjNp+Oh0VfQnzK3x/3iiTGkTYKpHXoQ9bAjAwpzTxSMHBv4/AjVYqUT61Rvj3bFfElaWvH99uzmOiptqrVzf8b4cqNnoX2l2DFMKnT3KBiqjZBv4DjLmWv+3GzjQcJONPtTPX14k9+LjoHE7WYV9Eq1mpQ0kqXyeUq/mKWeddtSmlwVybNHxNi3HYDBmKxWciYG/IN1hLaMvEFe1hv+NSGbKAFhDXvVgT++Cy6cJEaDwsbWUrgSj6UDECDC+oxMDrzeFTdW6stleY4SHsaXZx5/d4DR0IYLTy41vX85XSh9fYLEbJkLBYz5mcmCp+7L1Bkn8oHgts0SHsmwswnoiZAAIynxvUS8he5KH8h90WxPmi2YVb3s7PGGqSAVylkIG37in4uvxlxcjOViaF6ce95GOwQ1lmsvUBJebaCOb10yHiniXupnu9hdoP1uIHXQmlb4C8jwO8rxwcAHDqenxKxn5eF9C5Yxtq1urh7d7tbk5JUYXJ7NeWb//cN4G0QNHAKES7JNu/k8+1vfodSrAZoP2aDB2n0kdttqGS038FT1x1SRozgYWn6pyJgzwqFlMmHCzC/J/ik98kvGCpWBVnj8aK/Lz95eeNIK3VRT0FjL9j1RMct+2QFWF4fdJYLhB+JEbEE2jj6vQ1oaarTsuekCqPz4/1fgcdsP0kJ8xuLqBVcStBd99hQykhuso0VPSxgJKHKtLWhuixeenwAKHTpmK8bY0lulFncVsQ47HQoPIHINcQF4mQ8jw2QyCOgGxiRMXGpsDVUk09w+qtEAp08g01GR0JR7HL74DeX7qICcnKT7q0bsBGyBeuEnkX4juroh6IYPw9z0qo+43thdANT1WnxdldYFpU+SluH8D/x5hbRmCmpXtxvQD4BLXYqcFTkzyTU5b0heO5cUJrx9zAb7kgU2RtxsdGwb/z1/JStJe60JJfSNR4UXzEQ4zcMxy/lB0G3AXXKohwwevQ9X13ddbIf6XRdwqCiaVxlE66uXjXp2PATrEeHz0Lvv0QYfNsk9Sf1kbI580GQ/LPBUaaWI1JITVIgMgk412yw8p3J42FqzKynqxCuvXPOSjgSiqaQl/tqUS0eFPAHXy0lsofCeW0LVP8AN5qtBVcDF/VYFlhVLbIgyLH59U7AGAeqKb236iM9coUkHyI4N75QA5Pfd5ytB4X1wTSb7XtS00A64Quay28MGxQp/2Dz44zUZJS18ckHoZnaFYXqdB8tJ3xMUos5FDiPM9gQgX/GzuW1LqZwAezWQxRs03YRn+5RP2SivPl6ftmjqUDVMZeZKrTFxvPuquMfya5U/G5GWDFseiLhMpSzinrPrKpU85Sj15y8BNLbbHhjC0LOciSqnAusMeYvaE2b0O2WxHs0egEZ8WC04Ak3NJhMyGXgG3VXOgknxLzbb7eiQuEDGrDdFE3UBWJYnV2e59l13Mmdk7weciTKNJxKoFzRWULM7nthJq/9zIFMcmjI/mDuL0+9wWLUGPla4aCNsNWbx0U/pLYG5HKFhbeOyv3TEXkNgoG2M5FwaAWPmE9gXxWVCVbukh/UNL3yW3mwGlYRN+wcfsI8AeDS6ovKZI5Iui73IznajCvv2m40J8e1gwOd/4oc9MwTQb3amJqcd6TvsV4ijnSPs/P12tYhhHmnIjqjILmdi8nxJZJwhJSBfH47yQGOAy+382xp28TzVWtVfhbdKsbQuhKclvA8YFmuIRlS3fwNaIKsXgzYfdJ5xVZrsBmdMGHuk1jiga7Lb7XMZAElxf3V8EV93bS5vtoiqC/ZkQAayV68QhWzJkpZ8tJZETTJ5joQBEpLHBl1u1Ba+S++sBWu/ETLmFaJVqYbgrppOaNjsQjd2nLfRr0Ks2Hmo/hi+fyZTin/jTwizxSYW7Qh+0qzbbvK02LGcnHVlUGGRurGxfL98bpeHs/ZA+RDb/w+6dSnMPSe5ynvjaxrc2N+iFlC3s8ubnQAHgrfXBy2Gn0OGZzDlHgCTsR2EJl3NPqGd6voD1FZYNcOKYLczoQXhdCwxtDy4MLmMtTvPuRonfzjowOfmVhmApEr7g68WkMhBwasHS0OcPfLrHqcz50LcPoFibEhzLbD101qPzDcpFxcTWBsmwRtV9mJo7GN2gefr+X+aob1IT5LzHFkvbFniUrxUtaDBfC4tcBZnaOsiTYRGZFMwKTMdtXgbyDSkr0p1+DoRZXMX+GK36164EauSK2wT6CGINPkSzNpEz21VEIluQj/CdhwaeMX6xM/IeSzNJgXvegoASb0BeH5rtBgZULI3LWxKPAYmxgKxnzsk5o0lQhvSSUVMVPtwx4VcRVuTHXocx6Pzu+fS+Qdmczn+HSWmDWGF0w+KO6M/qty7ZPPufINrRyyBR2Wuk2rSJquKEWcxehDOhOKdE1LM7Djz3SHCFv5L3NTFxmjZBDiL7pRO+HIkS+N/RsVXnz7e5F1NBRJR7GXTbuHuTtkCf8GaPc5rAUL3saNaACgmsLb829xd7tUe/r8ixMmkh/dDY1fdxxDq/v3kWpznAR4gcKddBLQCrOYeQHabqklTzdjJE4VNoQ0gH0fNv/TRtMO4vZtTsVUq0FdRT+k05RlPJbwLiO40YcTnw1X+tEvz7XX+kgiP4+w5LAbTirt/yKwdMoK167EAV5nlJr+CKBsCT+SErHQm4KgC5O4dDqND9vGk3aQuVejzaVEU9am/tyJRnJo1grzIU6eOhpbaxGEKQYAdWiM8IdMAUfO/CmgOZrEpu2dIOOdV8u4Wylfv2C1XR2iP9xI2UMNSLKeLpoUbADl0pa1BFZq9d42um2sAAA" alt="Logo de M.Boubs, solutions de réparation technique" width="42" height="42">
+      <span>M.Boubs <small>Électroniques Solution</small></span>
+    </a>
+    <nav class="links" aria-label="Navigation principale">
+      <a href="#services">Services</a>
+      <a href="#diagnostic">Diagnostic</a>
+      <a href="#methode">Méthode</a>
+      <a href="#avis">Avis clients</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div style="display:flex;gap:10px;align-items:center">
+      <a class="btn" href="#contact">Demander un devis</a>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mobile">Menu</button>
+    </div>
+  </div>
+  <div class="mobile" id="mobile"><div class="wrap">
+    <a href="#services">Services</a><a href="#diagnostic">Diagnostic</a><a href="#methode">Méthode</a><a href="#avis">Avis clients</a><a href="#faq">FAQ</a><a href="#contact">Contact</a>
+  </div></div>
+  <div class="bar" id="bar"></div>
+</header>
+
+<main>
+<section class="hero" id="accueil">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Atelier de maintenance électronique · Yaoundé</span>
+      <h1>Ça ne s'allume plus ? On le remet <em>sous tension.</em></h1>
+      <p class="lead">À Yaoundé, diagnostic au niveau composant, pièces tracées, tests mesurés avant restitution. Ordinateurs et cartes mères, consoles, téléviseurs, onduleurs et équipements professionnels.</p>
+      <div class="cta">
+        <a class="btn" href="#diagnostic">Estimer ma panne <span aria-hidden="true">→</span></a>
+        <a class="btn ghost" href="#methode">Voir la méthode</a>
+      </div>
+      <div style="margin-top:24px"><span class="assure"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.8 2.8L16 9.5"/></svg>Devis gratuit et sans engagement</span></div>
+      <div class="facts">
+        <div><b>&lt; 24 h</b>diagnostic</div>
+        <div><b>30 pts</b>de contrôle final</div>
+        <div><b>6 mois</b>de garantie</div>
+      </div>
+    </div>
+    <div class="scope" role="group" aria-label="Simulation d'oscilloscope">
+      <div class="scope-head"><span><i class="led" id="led"></i><span id="verdict">Rail 3,3 V conforme</span></span><span>CH1 · 1 V/div</span></div>
+      <canvas id="scope" role="img" aria-label="Signal de l'alimentation affiché en temps réel"></canvas>
+      <div class="readouts">
+        <div>Vpp<b id="rVpp">3,30 V</b></div>
+        <div>Fréquence<b id="rHz">120 Hz</b></div>
+        <div>Ondulation<b id="rRip">12 mV</b></div>
+      </div>
+      <div class="ctrl">
+        <div class="seg">
+          <button type="button" id="mOk" aria-pressed="true">Signal sain</button>
+          <button type="button" id="mBad" class="bad" aria-pressed="false">Alim. défaillante</button>
+        </div>
+        <label for="freq">Hz <input type="range" id="freq" min="50" max="500" value="120"></label>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="track" id="track"></div>
+</div>
+
+<section class="block" id="services">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">Ce que fait l'atelier</span>
+      <h2>De la batterie fatiguée à la carte mère morte.</h2>
+      <p>Chaque intervention commence par une mesure, pas par une supposition. On remplace ce qui est cassé, on garde ce qui fonctionne.</p>
+    </div>
+    <div class="bento">
+      <article class="card big">
+        <span class="tag">Téléviseurs et écrans</span>
+        <h3>Dépannage de téléviseurs et d'écrans</h3>
+        <p>Écran noir, pas d'image, rétroéclairage éteint, voyant de veille qui clignote : démontage, mesure des tensions, remplacement du bloc d'alimentation ou de la carte défaillante, essai complet avant remontage.</p>
+        <svg class="tvx" viewBox="0 0 400 180" role="img" aria-label="Téléviseur démonté : capot arrière retiré, carte d'alimentation, carte principale, nappe et haut-parleurs">
+          <rect class="ghost" x="62" y="6" width="320" height="148" rx="10"/>
+          <rect x="30" y="26" width="320" height="148" rx="10"/>
+          <circle cx="41" cy="37" r="3"/><circle cx="339" cy="37" r="3"/><circle cx="41" cy="163" r="3"/><circle cx="339" cy="163" r="3"/>
+          <rect x="52" y="44" width="92" height="116" rx="5"/>
+          <circle cx="70" cy="66" r="9"/><circle cx="96" cy="66" r="9"/><circle cx="122" cy="66" r="9"/>
+          <rect x="64" y="92" width="40" height="30" rx="3"/><path d="M71 100h26M71 107h26M71 114h26M114 92v30M120 92v30M126 92v30"/>
+          <rect x="64" y="136" width="66" height="12" rx="2"/>
+          <path class="flow" d="M144 66H172M144 83H172M144 100H172"/>
+          <rect x="172" y="44" width="110" height="74" rx="5"/>
+          <rect x="199" y="60" width="38" height="38" rx="3"/><path d="M192 68h7M192 79h7M192 90h7M237 68h7M237 79h7M237 90h7"/>
+          <path d="M282 72H316M282 84H316"/><rect x="316" y="62" width="16" height="30" rx="2"/>
+          <circle cx="214" cy="148" r="13"/><circle cx="214" cy="148" r="4"/><circle cx="262" cy="148" r="13"/><circle cx="262" cy="148" r="4"/>
+        </svg>
+      </article>
+      <article class="card s3">
+        <span class="tag">Pièces courantes</span>
+        <h3>Écran, batterie, connecteur de charge</h3>
+        <p>Pièces testées avant pose, capacité de batterie mesurée avant et après, étanchéité rétablie quand l'appareil en disposait.</p>
+      </article>
+      <article class="card s3">
+        <span class="tag">Données</span>
+        <h3>Récupération avant réparation</h3>
+        <p>Copie sécurisée du stockage quand la carte ne démarre plus, avant toute intervention qui pourrait la compromettre.</p>
+      </article>
+      <article class="card s2">
+        <span class="tag">Préventif</span>
+        <h3>Nettoyage et thermique</h3>
+        <p>Dépoussiérage, pâte thermique neuve, relevé des températures en charge.</p>
+      </article>
+      <article class="card s2">
+        <span class="tag">Entreprises</span>
+        <h3>Contrats de parc</h3>
+        <p>Suivi d'un parc d'appareils, intervention prioritaire, appareil de prêt.</p>
+      </article>
+      <article class="card s2">
+        <span class="tag">Énergie</span>
+        <h3>Onduleurs et alimentation</h3>
+        <p>Test de batterie sous charge, remplacement des cellules, réparation de l'étage de puissance.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="atelier" style="padding-top:0">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">En atelier</span>
+      <h2>De la mesure à l'essai final.</h2>
+      <p>Les étapes que suit chaque appareil avant de vous être rendu.</p>
+    </div>
+    <!-- PHOTOS : pour afficher vos propres photos, créez un dossier "photos" à côté de cette page et déposez-y des images (JPG) portant les noms ci-dessous. Chaque photo remplace automatiquement l'illustration correspondante : tv-essai.jpg, mesure-tension.jpg, onduleur-batterie.jpg, portable-ouvert.jpg, pate-thermique.jpg, controle-final.jpg -->
+    <div class="gallery">
+      <figure class="shot"><div class="frame"><svg class="ill" viewBox="0 0 400 260" role="img" aria-label="Téléviseur affichant une mire de test après réparation"><path class="dim" d="M24 224H376"/><rect x="70" y="36" width="260" height="150" rx="8"/><rect x="82" y="48" width="236" height="126" rx="3"/><rect x="82.0" y="50" width="34" height="84" style="fill:#E6EEF8;stroke:none"/><rect x="115.7" y="50" width="34" height="84" style="fill:#E9C27C;stroke:none"/><rect x="149.4" y="50" width="34" height="84" style="fill:#2FE0C8;stroke:none"/><rect x="183.10000000000002" y="50" width="34" height="84" style="fill:#6FA8FF;stroke:none"/><rect x="216.8" y="50" width="34" height="84" style="fill:#8FB0D6;stroke:none"/><rect x="250.5" y="50" width="34" height="84" style="fill:#3E5F8F;stroke:none"/><rect x="284.20000000000005" y="50" width="34" height="84" style="fill:#1B2F4D;stroke:none"/><rect x="82" y="134" width="59" height="38" style="fill:#FFFFFF;stroke:none"/><rect x="141" y="134" width="59" height="38" style="fill:#9FB6D3;stroke:none"/><rect x="200" y="134" width="59" height="38" style="fill:#4B6A96;stroke:none"/><rect x="259" y="134" width="59" height="38" style="fill:#14263F;stroke:none"/><circle class="hl" cx="200" cy="180" r="2.5"/><path d="M160 186v16M240 186v16M130 204h140"/><circle class="hl" cx="334" cy="34" r="15"/><path class="hl" d="M326 34l5.5 6 10-12"/></svg><img src="photos/tv-essai.jpg" alt="" loading="lazy"></div><figcaption><b>Essai d'image</b>Mires et sources de test avant la remise de l'écran.</figcaption></figure>
+      <figure class="shot"><div class="frame"><svg class="ill" viewBox="0 0 400 260" role="img" aria-label="Multimètre mesurant la tension d'un rail sur une carte électronique"><path class="dim" d="M24 232H376"/><rect x="30" y="66" width="176" height="140" rx="8"/><rect x="66" y="98" width="52" height="52" rx="4"/><path d="M74 98v-8M92 98v-8M110 98v-8M74 150v8M92 150v8M110 150v8M66 112h-8M66 134h-8M118 112h8M118 134h8"/><path class="tr" d="M126 112H176V88M126 134H150V178H190"/><circle cx="176" cy="88" r="4"/><circle cx="190" cy="178" r="4"/><rect x="236" y="28" width="132" height="196" rx="14"/><rect x="252" y="44" width="100" height="48" rx="5"/><text x="302" y="80" text-anchor="middle">3.30 V</text><circle cx="302" cy="148" r="34"/><path class="hl" d="M302 148l17-19"/><path d="M302 110v7M302 186v-7M264 148h7M340 148h-7"/><circle cx="272" cy="204" r="5"/><circle cx="302" cy="204" r="5"/><circle cx="332" cy="204" r="5"/><path class="hl" d="M272 209C248 238 206 218 192 182"/><path class="hl" d="M302 209C262 246 170 226 178 94"/></svg><img src="photos/mesure-tension.jpg" alt="" loading="lazy"></div><figcaption><b>Mesure des tensions</b>Chaque rail est contrôlé au multimètre avant de conclure.</figcaption></figure>
+      <figure class="shot"><div class="frame"><svg class="ill" viewBox="0 0 400 260" role="img" aria-label="Batterie d'onduleur testée avec un appareil de contrôle"><path class="dim" d="M24 232H376"/><rect x="36" y="46" width="132" height="170" rx="10"/><rect x="54" y="62" width="96" height="36" rx="4"/><path class="hl" d="M64 80h14M86 80h14M108 80h14"/><circle class="tr" cx="68" cy="124" r="4"/><circle class="tr" cx="90" cy="124" r="4"/><path d="M54 150h96M54 164h96M54 178h96M54 192h96"/><rect x="206" y="118" width="104" height="82" rx="6"/><rect x="220" y="108" width="18" height="10"/><rect x="278" y="108" width="18" height="10"/><path d="M229 128v10M224 133h10M283 133h10"/><text x="258" y="176" text-anchor="middle">12 V</text><circle cx="346" cy="64" r="30"/><path class="hl" d="M346 64l15-15"/><path d="M322 64h6M364 64h6M346 40v6"/><path class="tr" d="M229 108C229 60 300 62 316 62M287 108C287 84 304 76 318 72"/></svg><img src="photos/onduleur-batterie.jpg" alt="" loading="lazy"></div><figcaption><b>Batterie d'onduleur</b>Test sous charge, puis remplacement des éléments usés.</figcaption></figure>
+      <figure class="shot"><div class="frame"><svg class="ill" viewBox="0 0 400 260" role="img" aria-label="Ordinateur portable ouvert avec ventilateur, processeur, mémoire et batterie"><rect x="36" y="26" width="328" height="198" rx="14"/><circle cx="52" cy="42" r="3"/><circle cx="348" cy="42" r="3"/><circle cx="52" cy="208" r="3"/><circle cx="348" cy="208" r="3"/><circle cx="112" cy="98" r="36"/><circle cx="112" cy="98" r="10"/><path d="M112 62v16M112 134v-16M76 98h16M148 98h-16M87 73l9 9M137 123l-9-9M137 73l-9 9M87 123l9-9"/><path class="hl" d="M148 98H214"/><rect x="214" y="68" width="60" height="60" rx="5"/><rect x="228" y="82" width="32" height="32" rx="3"/><rect x="296" y="48" width="52" height="12" rx="2"/><rect x="296" y="66" width="52" height="12" rx="2"/><rect x="298" y="98" width="48" height="34" rx="4"/><path class="tr" d="M274 90H296M274 106H298"/><rect x="62" y="156" width="276" height="40" rx="6"/><path d="M131 156v40M200 156v40M269 156v40"/></svg><img src="photos/portable-ouvert.jpg" alt="" loading="lazy"></div><figcaption><b>Portable ouvert</b>Ventilateur, mémoire, stockage et batterie vérifiés un par un.</figcaption></figure>
+      <figure class="shot"><div class="frame"><svg class="ill" viewBox="0 0 400 260" role="img" aria-label="Dépôt de pâte thermique sur un processeur et ventilateur nettoyé"><path class="dim" d="M24 232H376"/><rect x="96" y="116" width="124" height="116" rx="8"/><rect x="124" y="144" width="68" height="62" rx="4"/><circle class="hl" cx="158" cy="175" r="10"/><rect x="140" y="26" width="36" height="66" rx="5"/><path d="M158 92v18M158 26V12M146 12h24M140 44h9M140 58h9M140 72h9"/><circle cx="306" cy="146" r="54"/><circle cx="306" cy="146" r="12"/><path d="M306 92v42M306 200v-42M252 146h42M360 146h-42M268 108l26 26M344 184l-26-26M344 108l-26 26M268 184l26-26"/></svg><img src="photos/pate-thermique.jpg" alt="" loading="lazy"></div><figcaption><b>Pâte thermique</b>Dépoussiérage et pâte neuve pour retrouver de bonnes températures.</figcaption></figure>
+      <figure class="shot"><div class="frame"><svg class="ill" viewBox="0 0 400 260" role="img" aria-label="Liste de contrôle final cochée avant la remise de l'appareil"><path class="dim" d="M24 238H376"/><rect x="104" y="34" width="192" height="196" rx="12"/><rect x="164" y="22" width="72" height="24" rx="6"/><rect x="132" y="69" width="22" height="22" rx="4"/><path class="tr" d="M137 80l6 7 12-14"/><path d="M170 80h100"/><rect x="132" y="105" width="22" height="22" rx="4"/><path class="tr" d="M137 116l6 7 12-14"/><path d="M170 116h100"/><rect x="132" y="141" width="22" height="22" rx="4"/><path class="tr" d="M137 152l6 7 12-14"/><path d="M170 152h100"/><rect x="132" y="177" width="22" height="22" rx="4"/><path class="hl" d="M137 188l6 7 12-14"/><path d="M170 188h100"/></svg><img src="photos/controle-final.jpg" alt="" loading="lazy"></div><figcaption><b>Contrôle final</b>Une liste de points à valider avant de rendre l'appareil.</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="diagnostic" style="padding-top:0">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">Pré-diagnostic</span>
+      <h2>Choisissez l'appareil et le symptôme.</h2>
+      <p>Une première piste en quelques secondes. Le diagnostic réel se fait à l'établi, avec les instruments.</p>
+      <span class="assure"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.8 2.8L16 9.5"/></svg>Devis gratuit et sans engagement</span>
+    </div>
+    <div class="diag">
+      <div class="panel">
+        <div class="group">
+          <span>Appareil</span>
+          <div class="devgrid" id="devChips"></div>
+        </div>
+        <div class="group" id="otherDiagWrap" hidden><label for="otherDiag">Précisez l'appareil</label><input type="text" id="otherDiag" autocomplete="off" maxlength="60" placeholder="Ex. photocopieuse, régulateur de tension"></div>
+        <div class="group" style="margin-bottom:0">
+          <span>Symptôme</span>
+          <div class="chips" id="symChips"></div>
+        </div>
+      </div>
+      <div class="panel result" aria-live="polite">
+        <div class="res-top"><span class="eyebrow" id="resDev">Ordinateur portable</span><svg class="ico res-ico" viewBox="0 0 48 48" aria-hidden="true"><use id="resUse" href="#i-laptop"/></svg></div>
+        <h3 id="resCause"></h3>
+        <dl>
+          <dt>Ce qu'on vérifie</dt><dd id="resSteps"></dd>
+          <dt>Délai habituel</dt><dd id="resDelay"></dd>
+          <dt>Niveau d'intervention</dt><dd><div class="level" id="resLevel"></div></dd>
+        </dl>
+        <div class="res-cta"><span class="assure inv"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.8 2.8L16 9.5"/></svg>Devis gratuit et sans engagement</span><a class="btn" id="resCta" href="#contact">Demander mon devis</a></div>
+        <p class="note" id="resNote"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block mask" id="methode">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">La méthode</span>
+      <h2>Cinq étapes, chacune tracée.</h2>
+      <p>Vous savez où en est votre appareil, ce qui a été changé et ce qui a été mesuré avant de le récupérer.</p>
+    </div>
+    <ol class="steps">
+      <li><time>J0</time><h3>Dépôt</h3><p>État des lieux, photos, sauvegarde demandée si l'appareil démarre.</p></li>
+      <li><time>sous 24 h</time><h3>Diagnostic</h3><p>Mesures aux instruments, cause identifiée, rapport clair.</p></li>
+      <li><time>sur validation</time><h3>Devis</h3><p>Devis gratuit et sans engagement, avec un prix ferme. Sans votre accord, rien n'est démonté plus loin.</p></li>
+      <li><time>1 à 5 jours</time><h3>Réparation</h3><p>Pièces tracées, intervention sous loupe, journal des opérations.</p></li>
+      <li><time>2 h de rodage</time><h3>Tests et retour</h3><p>30 points de contrôle, essai en charge, restitution avec garantie.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="block" id="avis">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">Avis clients</span>
+      <h2>Ce que disent les clients du service.</h2>
+    </div>
+    <div class="reviews">
+      <figure class="review"><div class="rtop"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><use href="#i-laptop"/></svg><span class="what">Ordinateur portable</span><span class="sample"></span></div><blockquote>Mon portable ne démarrait plus du tout après une coupure de courant. Le problème sur l'alimentation de la carte m'a été expliqué clairement, le prix annoncé n'a pas bougé et mes documents étaient intacts à la remise.</blockquote><figcaption>Marcelin · Ngousso, Yaoundé</figcaption></figure>
+      <figure class="review"><div class="rtop"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><use href="#i-tv"/></svg><span class="what">Téléviseur</span><span class="sample"></span></div><blockquote>Mon téléviseur s'éteignait au bout de quelques minutes et le voyant de veille clignotait. Le bloc d'alimentation était en cause. Il a été remplacé, puis le téléviseur a tourné plusieurs heures en essai avant de me revenir.</blockquote><figcaption>Madelenne · Eléveur, Yaoundé</figcaption></figure>
+      <figure class="review"><div class="rtop"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><use href="#i-tv"/></svg><span class="what">Téléviseur</span><span class="sample"></span></div><blockquote>Écran allumé mais sans image. Le diagnostic a montré que le bloc d'alimentation était en cause ainsi que la dalle de traitement d'image. Le devis m'a évité une dépense inutile.</blockquote><figcaption>Nathalie · Messassi, Yaoundé</figcaption></figure>
+      <figure class="review"><div class="rtop"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><use href="#i-ups"/></svg><span class="what">Onduleur</span><span class="sample"></span></div><blockquote>Mon onduleur coupait dès que je branchais l'ordinateur et la box. Batterie testée sous charge puis remplacée, essai de décharge complet. Les coupures de courant ne me font plus perdre mon travail.</blockquote><figcaption>John · Hotel de ville, Yaoundé</figcaption></figure>
+    </div>
+    <div style="margin-top:28px"><a class="btn ghost" href="https://wa.me/237656395812?text=Bonjour%2C%20je%20suis%20client%20et%20je%20souhaite%20laisser%20un%20avis%20sur%20ma%20r%C3%A9paration." target="_blank" rel="noopener">Laisser un avis sur WhatsApp</a></div>
+  </div>
+</section>
+
+<section class="block" id="faq">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">Questions fréquentes</span>
+      <h2>Avant de pousser la porte.</h2>
+    </div>
+    <div class="faq">
+      <details open><summary>Le devis m'engage-t-il à quelque chose ?</summary><p>Non. Le devis est gratuit et sans engagement. Si vous le refusez, l'appareil vous est rendu tel qu'il est arrivé, avec le rapport de mesures.</p></details>
+      <details><summary>Mes données sont-elles en sécurité ?</summary><p>L'atelier n'accède pas à vos contenus. Pour une panne qui peut les mettre en danger, une copie du stockage est proposée avant toute intervention, uniquement avec votre accord.</p></details>
+      <details><summary>Quelle garantie sur une réparation ?</summary><p>Six mois sur la pièce remplacée et sur la main d'œuvre associée. La garantie est écrite sur le bon de restitution.</p></details>
+      <details><summary>Réparez-vous les appareils professionnels ?</summary><p>Oui : postes de travail, écrans, cartes de commande et équipements de mesure, avec un contrat de suivi si vous gérez un parc.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="contact" style="padding-top:0">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">Contact</span>
+      <h2>Décrivez la panne, on s'occupe du reste.</h2>
+      <p>Remplissez le formulaire pour générer un récapitulatif clair, puis envoyez-le sur WhatsApp ou copiez-le dans votre message.</p>
+      <span class="assure"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.8 2.8L16 9.5"/></svg>Devis gratuit et sans engagement</span>
+    </div>
+    <div class="contact">
+      <form class="panel" id="form" novalidate>
+        <div class="field"><label for="fName">Nom</label><input type="text" id="fName" autocomplete="name" placeholder="Votre nom"></div>
+        <div class="field"><label for="fPhone">Téléphone / WhatsApp *</label><input type="tel" id="fPhone" inputmode="tel" autocomplete="tel" placeholder="Ex. +237 6 XX XX XX XX" aria-required="true" aria-describedby="fPhoneErr"><span class="err" id="fPhoneErr" role="alert"></span></div>
+        <div class="field"><label for="fQuar">Quartier</label><input type="text" id="fQuar" autocomplete="off" placeholder="Ex. Bastos, Mvog-Mbi, Essos"></div>
+        <div class="field"><label for="fDev">Appareil</label>
+          <select id="fDev"><option>Ordinateur portable</option><option>Console de jeu</option><option>Téléviseur / écran</option><option>Onduleur</option><option>Équipement professionnel</option><option>Autre</option></select></div>
+        <div class="field" id="fOtherWrap" hidden><label for="fOther">Précisez l'appareil *</label><input type="text" id="fOther" autocomplete="off" maxlength="60" placeholder="Ex. photocopieuse, régulateur de tension" aria-describedby="fOtherErr"><span class="err" id="fOtherErr" role="alert"></span></div>
+        <div class="field"><label for="fMsg">Ce qui se passe</label><textarea id="fMsg" placeholder="Ex. ne charge plus depuis une chute, l'écran reste noir mais le voyant s'allume."></textarea></div>
+        <p class="req">* Champ obligatoire. Devis gratuit et sans engagement.</p>
+        <button class="btn" type="submit">Préparer mon récapitulatif</button>
+      </form>
+      <div class="panel recap">
+        <h3 style="margin:0">Récapitulatif</h3>
+        <pre id="recap">Votre récapitulatif apparaîtra ici.</pre>
+        <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap">
+          <a class="btn" id="waSend" href="https://wa.me/237656395812?text=Bonjour%2C%20je%20souhaite%20avoir%20des%20informations%20pour%20une%20r%C3%A9paration" target="_blank" rel="noopener">Envoyer sur WhatsApp</a>
+          <button class="btn ghost" type="button" id="copy">Copier le texte</button>
+          <span class="status" id="status" role="status"></span>
+        </div>
+        <div class="coords">
+          <span>E-mail : <a href="mailto:boubaanwar7@gmail.com">boubaanwar7@gmail.com</a></span>
+          <span>Tél. / WhatsApp : <a href="tel:+237656395812">+237 6 56 39 58 12</a></span>
+          <span>Yaoundé, Cameroun</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap"><span class="brand-foot"><img class="avatar sm" src="data:image/webp;base64,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" alt="Logo de M.Boubs, solutions de réparation technique" width="42" height="42">© 2026 M.Boubs Électroniques Solution</span><span><a href="mailto:boubaanwar7@gmail.com">boubaanwar7@gmail.com</a> · <a href="tel:+237656395812">+237 6 56 39 58 12</a> · Yaoundé, Cameroun</span></div></footer>
+
+<a class="wa" href="https://wa.me/237656395812?text=Bonjour%2C%20je%20souhaite%20avoir%20des%20informations%20pour%20une%20r%C3%A9paration" target="_blank" rel="noopener" title="Écrire sur WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H10l-5 4v-4H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M8 10h8M8 13h5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Devis sur WhatsApp</a>
+
+<script>
+(function(){
+  var $=function(s){return document.querySelector(s)};
+  var reduce=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  /* Marquee */
+  var items=["Ordinateurs portables","Cartes mères","Onduleurs","Consoles","Écrans et TV","Cartes industrielles","Tablettes","Objets connectés","Imprimantes","Instruments de mesure"];
+  var html="";for(var k=0;k<2;k++){html+=items.map(function(t){return "<span>"+t+"</span>"}).join("")}
+  $("#track").innerHTML=html;
+
+  /* Menu mobile */
+  var mb=$("#menuBtn"),mob=$("#mobile");
+  mb.addEventListener("click",function(){var o=mob.classList.toggle("open");mb.setAttribute("aria-expanded",o)});
+  mob.addEventListener("click",function(e){if(e.target.tagName==="A"){mob.classList.remove("open");mb.setAttribute("aria-expanded","false")}});
+
+  /* Barre de progression + scrollspy */
+  var bar=$("#bar"),ticking=false;
+  function prog(){var h=document.documentElement.scrollHeight-window.innerHeight;bar.style.transform="scaleX("+(h>0?Math.min(1,window.scrollY/h):0)+")";ticking=false}
+  window.addEventListener("scroll",function(){if(!ticking){ticking=true;requestAnimationFrame(prog)}},{passive:true});prog();
+  var links=[].slice.call(document.querySelectorAll("nav.links a"));
+  if("IntersectionObserver" in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.classList.toggle("on",a.getAttribute("href")==="#"+e.target.id)})}})},{rootMargin:"-45% 0px -50% 0px"});
+    ["services","diagnostic","methode","avis","faq","contact"].forEach(function(id){var el=document.getElementById(id);if(el)io.observe(el)});
+  }
+
+  /* Oscilloscope */
+  var cv=$("#scope"),ctx=cv.getContext("2d"),W=0,H=0,mode="ok",freq=120,css=getComputedStyle(document.documentElement),col={};
+  function readColors(){col.screen=css.getPropertyValue("--screen").trim()||"#07221B";col.grid=css.getPropertyValue("--grid").trim()||"#14493B";col.trace=css.getPropertyValue("--trace").trim()||"#2FE0C8";col.warn=css.getPropertyValue("--warn").trim()||"#FF8A3D"}
+  function size(){var r=cv.getBoundingClientRect(),d=Math.min(window.devicePixelRatio||1,2);W=r.width;H=r.height;cv.width=Math.round(W*d);cv.height=Math.round(H*d);ctx.setTransform(d,0,0,d,0,0)}
+  function draw(t){
+    ctx.fillStyle=col.screen;ctx.fillRect(0,0,W,H);
+    ctx.strokeStyle=col.grid;ctx.lineWidth=1;ctx.beginPath();
+    for(var i=1;i<10;i++){var x=Math.round(W*i/10)+.5;ctx.moveTo(x,0);ctx.lineTo(x,H)}
+    for(var j=1;j<6;j++){var y=Math.round(H*j/6)+.5;ctx.moveTo(0,y);ctx.lineTo(W,y)}
+    ctx.stroke();
+    var cycles=1.5+freq/110,bad=mode==="bad",amp=H*.3,mid=H/2;
+    ctx.strokeStyle=bad?col.warn:col.trace;ctx.lineWidth=2.4;ctx.lineJoin="round";ctx.shadowColor=ctx.strokeStyle;ctx.shadowBlur=10;ctx.beginPath();
+    for(var px=0;px<=W;px+=2){
+      var ph=px/W*cycles*Math.PI*2-t*0.0025*(freq/120),v=Math.sin(ph);
+      if(bad){v=Math.max(-.6,Math.min(.6,v*1.25))+Math.sin(ph*9+t*.004)*.13+Math.sin(px*.9+t*.02)*.03}
+      else{v+=Math.sin(px*1.7+t*.01)*.012}
+      var py=mid-v*amp;px===0?ctx.moveTo(px,py):ctx.lineTo(px,py);
+    }
+    ctx.stroke();ctx.shadowBlur=0;
+  }
+  var last=0,frame=0;
+  function loop(t){
+    frame++;if(frame%60===0)readColors();
+    draw(t);
+    if(t-last>220){
+      last=t;var bad=mode==="bad";
+      $("#rVpp").textContent=(bad?(2.04+Math.random()*.06):(3.29+Math.random()*.02)).toFixed(2).replace(".",",")+" V";
+      $("#rRip").textContent=(bad?Math.round(390+Math.random()*50):Math.round(9+Math.random()*6))+" mV";
+    }
+    if(!reduce)requestAnimationFrame(loop);
+  }
+  function setMode(m){
+    mode=m;$("#mOk").setAttribute("aria-pressed",m==="ok");$("#mBad").setAttribute("aria-pressed",m==="bad");
+    $("#led").classList.toggle("bad",m==="bad");
+    $("#verdict").textContent=m==="bad"?"Rail 3,3 V hors tolérance":"Rail 3,3 V conforme";
+    if(reduce){draw(0)}
+  }
+  $("#mOk").addEventListener("click",function(){setMode("ok")});
+  $("#mBad").addEventListener("click",function(){setMode("bad")});
+  $("#freq").addEventListener("input",function(e){freq=+e.target.value;$("#rHz").textContent=freq+" Hz";if(reduce)draw(0)});
+  window.addEventListener("resize",function(){size();if(reduce)draw(0)});
+  readColors();size();
+  if(reduce){draw(0)}else{requestAnimationFrame(loop)}
+
+  /* Photos de l'atelier : une photo déposée dans photos/ remplace l'illustration */
+  [].forEach.call(document.querySelectorAll(".frame img"),function(im){
+    function drop(){if(im.parentNode)im.parentNode.removeChild(im)}
+    im.addEventListener("error",drop);
+    if(im.complete&&!im.naturalWidth)drop();
+  });
+
+  /* Pré-diagnostic */
+  var devices=[
+    {id:"laptop",label:"Ordinateur portable",note:"Un démontage complet est parfois nécessaire pour accéder à la carte mère."},
+    {id:"console",label:"Console de jeu",note:"Les ports vidéo et la gestion thermique sont les pannes les plus fréquentes."},
+    {id:"tv",label:"Téléviseur / écran",note:"Le bloc d'alimentation est contrôlé avant toute commande de dalle."},
+    {id:"ups",label:"Onduleur",note:"La batterie est testée sous charge avant de conclure à une panne de l'électronique."},
+    {id:"pro",label:"Équipement professionnel",note:"Une intervention sur site peut être étudiée pour les appareils fixes."},
+    {id:"other",label:"Autre",note:"Précisez l'appareil : l'orientation sera confirmée après examen."}
+  ];
+  var symptoms=[
+    {id:"off",label:"Ne s'allume plus",cause:"Court-circuit sur un rail d'alimentation ou circuit de charge défaillant.",steps:"Mesure des rails à l'alimentation de laboratoire, recherche du court-circuit à la caméra thermique.",delay:"2 à 4 jours",level:3},
+    {id:"batt",label:"Batterie / autonomie",cause:"Cellule dégradée ou gestion de charge instable.",steps:"Test de capacité en décharge, contrôle du circuit de charge, remplacement de la batterie si nécessaire.",delay:"24 h",level:1,d:["laptop","ups","pro","other"]},
+    {id:"screen",label:"Écran / image défaillante",cause:"Dalle, nappe de liaison, rétroéclairage ou sortie vidéo en cause.",steps:"Essai sur un écran de référence, contrôle de la liaison vidéo, remplacement de la pièce défaillante.",delay:"1 à 2 jours",level:2,d:["laptop","console","tv","pro","other"]},
+    {id:"heat",label:"Surchauffe",cause:"Pâte thermique séchée, ventilation encrassée ou régulateur en dérive.",steps:"Démontage, nettoyage, pâte thermique neuve, relevé des températures en charge.",delay:"24 h",level:1},
+    {id:"sound",label:"Son absent",cause:"Haut-parleur, circuit audio ou connecteur oxydé.",steps:"Test de continuité, nettoyage des contacts, essai du circuit audio.",delay:"1 à 2 jours",level:2,d:["laptop","console","tv","other"]},
+    {id:"net",label:"Wi-Fi / réseau",cause:"Antenne débranchée, module radio ou soudure fissurée.",steps:"Contrôle des antennes, mesure du signal, reprise de soudure du module.",delay:"2 à 3 jours",level:3,d:["laptop","console","tv","pro","other"]},
+    {id:"beep",label:"Alarme / bip continu",cause:"Surcharge, batterie en fin de vie ou ventilation défaillante.",steps:"Lecture du code d'alarme, test de la batterie sous charge, mesure de la tension de sortie.",delay:"24 h à 2 jours",level:2,d:["ups","pro","other"]},
+    {id:"cut",label:"Coupe dès qu'on branche du matériel",cause:"Batterie incapable de fournir le courant, ou étage de puissance défaillant.",steps:"Essai de décharge sous charge, contrôle des condensateurs et des transistors de puissance.",delay:"2 à 4 jours",level:3,d:["ups","other"]}
+  ];
+  function symsFor(dev){return symptoms.filter(function(s){return !s.d||s.d.indexOf(dev.id)>-1})}
+  var curDev=devices[0],curSym=symsFor(devices[0])[0];
+  var levelText=["Rapide","Standard","Approfondi"];
+
+  function buildDevices(){
+    var el=$("#devChips");el.innerHTML="";
+    devices.forEach(function(d){
+      var b=document.createElement("button");
+      b.type="button";b.className="dev";
+      b.innerHTML='<svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><use href="#i-'+d.id+'"/></svg><span>'+d.label+'</span>';
+      b.addEventListener("click",function(){
+        curDev=d;
+        if(symsFor(d).indexOf(curSym)<0)curSym=symsFor(d)[0];
+        buildSymptoms();render();
+      });
+      el.appendChild(b);
+    });
+  }
+  function buildSymptoms(){
+    var el=$("#symChips");el.innerHTML="";
+    symsFor(curDev).forEach(function(s){
+      var b=document.createElement("button");
+      b.type="button";b.className="chip";b.textContent=s.label;
+      b.addEventListener("click",function(){curSym=s;render()});
+      el.appendChild(b);
+    });
+  }
+  function render(){
+    var list=symsFor(curDev),other=curDev.id==="other",custom=$("#otherDiag").value.trim();
+    [].forEach.call($("#devChips").children,function(b,k){b.setAttribute("aria-pressed",devices[k].id===curDev.id)});
+    [].forEach.call($("#symChips").children,function(b,k){b.setAttribute("aria-pressed",list[k].id===curSym.id)});
+    $("#otherDiagWrap").hidden=!other;
+    $("#resDev").textContent=(other&&custom?custom:curDev.label)+" · "+curSym.label;
+    $("#resUse").setAttribute("href","#i-"+curDev.id);
+    $("#resCause").textContent=curSym.cause;
+    $("#resSteps").textContent=curSym.steps;
+    $("#resDelay").textContent=curSym.delay;
+    $("#resNote").textContent=curDev.note+" Estimation indicative, confirmée après diagnostic.";
+    var lv=$("#resLevel");lv.innerHTML="";
+    for(var i=1;i<=3;i++){var s=document.createElement("i");if(i<=curSym.level)s.className="on";lv.appendChild(s)}
+    var t=document.createElement("span");t.textContent=levelText[curSym.level-1];lv.appendChild(t);
+  }
+  buildDevices();buildSymptoms();render();
+  $("#otherDiag").addEventListener("input",render);
+
+  /* Formulaire : champ "Autre" dynamique */
+  function syncOther(){$("#fOtherWrap").hidden=$("#fDev").value!=="Autre"}
+  $("#fDev").addEventListener("change",syncOther);
+  syncOther();
+
+  /* Le bouton du pré-diagnostic pré-remplit le formulaire */
+  $("#resCta").addEventListener("click",function(){
+    $("#fDev").value=curDev.label;
+    syncOther();
+    if(curDev.id==="other")$("#fOther").value=$("#otherDiag").value.trim();
+    if(!$("#fMsg").value.trim())$("#fMsg").value=curSym.label+".";
+  });
+
+  /* Lien WhatsApp avec le récapitulatif */
+  function updateWa(){$("#waSend").href="https://wa.me/237656395812?text="+encodeURIComponent($("#recap").textContent)}
+
+  /* Formulaire : validation et récapitulatif */
+  $("#form").addEventListener("submit",function(e){
+    e.preventDefault();
+    var ph=$("#fPhone"),ot=$("#fOther"),phv=ph.value.trim(),ov=ot.value.trim(),
+        digits=phv.replace(/\D/g,""),isOther=$("#fDev").value==="Autre",bad=false;
+    ph.removeAttribute("aria-invalid");ot.removeAttribute("aria-invalid");
+    $("#fPhoneErr").textContent="";$("#fOtherErr").textContent="";
+    if(!/^[+\d\s().\-]+$/.test(phv)||digits.length<8||digits.length>15){
+      ph.setAttribute("aria-invalid","true");
+      $("#fPhoneErr").textContent="Indiquez un numéro de téléphone ou WhatsApp valide (au moins 8 chiffres).";
+      ph.focus();bad=true;
+    }
+    if(isOther&&!ov){
+      ot.setAttribute("aria-invalid","true");
+      $("#fOtherErr").textContent="Indiquez de quel appareil il s'agit.";
+      if(!bad)ot.focus();
+      bad=true;
+    }
+    if(bad){$("#status").textContent="";return}
+    var n=$("#fName").value.trim()||"(nom à compléter)",q=$("#fQuar").value.trim(),
+        m=$("#fMsg").value.trim()||"(décrivez la panne)",
+        dev=isOther?"Autre ("+ov+")":$("#fDev").value;
+    $("#recap").textContent="Bonjour,\n\nJe m'appelle "+n+". Mon appareil : "+dev+(q?", quartier : "+q:"")+".\nMon numéro (téléphone / WhatsApp) : "+phv+"\n\nProblème constaté : "+m+"\n\nPouvez-vous me proposer un devis ?\n\nMerci.";
+    $("#status").textContent="Récapitulatif prêt. Envoyez-le sur WhatsApp ou copiez-le.";
+    updateWa();
+  });
+$("#copy").addEventListener("click",function(){
+    var txt=$("#recap").textContent,st=$("#status");
+    function fallback(){var r=document.createRange();r.selectNodeContents($("#recap"));var s=window.getSelection();s.removeAllRanges();s.addRange(r);st.textContent="Texte sélectionné, copiez-le avec Ctrl+C."}
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(txt).then(function(){st.textContent="Texte copié."},fallback)}else{fallback()}
+  });
+})();
+</script>
+</body>
+</html>
